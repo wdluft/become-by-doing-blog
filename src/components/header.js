@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import myLogo from '../images/logo.png';
 
 const HeaderWrapper = styled.header`
   h1 {
@@ -15,11 +16,17 @@ const HeaderWrapper = styled.header`
       }
     }
   }
+
+  img {
+    width: 75px;
+    display: inline-block;
+  }
 `;
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <div>
+      <img src={myLogo} alt="Blog Logo" />
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
