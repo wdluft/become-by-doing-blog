@@ -18,7 +18,7 @@ const HeaderWrapper = styled.header`
   }
 
   img {
-    width: 75px;
+    width: 42px;
     display: inline-block;
   }
 `;
@@ -26,9 +26,12 @@ const HeaderWrapper = styled.header`
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <div>
-      <img src={myLogo} alt="Blog Logo" />
       <h1>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/">
+          <img src={myLogo} alt="Blog Logo" />
+
+          {siteTitle}
+        </Link>
       </h1>
       <p>
         A collection of thoughts by{' '}
