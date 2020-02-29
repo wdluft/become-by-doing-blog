@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik&display=swap');
 
 :root {
   --primary-color-1: #e4ffff;
@@ -57,8 +57,8 @@
 }
 
 html {
-  font-family: "Carmorant Garamond", Cambria, Cochin, Georgia, Times,
-    "Times New Roman", serif;
+  font-family: 'Carmorant Garamond', Cambria, Cochin, Georgia, Times,
+    'Times New Roman', serif;
 }
 
 body {
@@ -69,4 +69,13 @@ body {
 
 li {
   list-style: none;
+}
+
+a {
+  color: var(--primary-color-5);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

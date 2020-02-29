@@ -1,42 +1,48 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+
+const HeaderWrapper = styled.header`
+  h1 {
+    font-size: var(--text-9);
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+`;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+  <HeaderWrapper>
+    <div>
+      <h1>
+        <Link to="/">{siteTitle}</Link>
       </h1>
+      <p>
+        A collection of thoughts by{' '}
+        <a
+          href="https://twitter.com/iamwilldl"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Will Luft
+        </a>
+      </p>
     </div>
-  </header>
-)
+  </HeaderWrapper>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
