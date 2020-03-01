@@ -1,10 +1,10 @@
 ---
-slug: '/first-post'
-title: 'Our First Post'
-date: '2020-03-01'
+slug: '/third-post'
+title: 'Oh baby a triple'
+date: '2020-03-03'
 ---
 
-# This is the first post!
+# Our third post works!
 
 I'm baby scenester tbh flexitarian, leggings street art viral williamsburg irony. Blog kale chips photo booth yuccie. Trust fund truffaut fam vexillologist. Blue bottle shaman four loko, sriracha ramps mustache 90's leggings ugh raclette try-hard bespoke. Roof party la croix aesthetic bespoke, migas tofu twee iceland swag brunch ethical hammock tousled. Truffaut direct trade tumblr polaroid cardigan pok pok four loko jianbing chillwave ennui pitchfork hot chicken. Bespoke four dollar toast tousled portland neutra pabst.
 
