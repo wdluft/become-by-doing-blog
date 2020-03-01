@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
     <LayoutWrapper>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
-        <Archive />
         <main>{children}</main>
+        <Archive />
         <Footer />
       </div>
     </LayoutWrapper>

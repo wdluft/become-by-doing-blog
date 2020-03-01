@@ -1,13 +1,14 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-const ALL_POSTS_QUERY = graphql`
-  query AllPostsQuery {
-    allMarkdownRemark {
+const POST_ARCHIVE_QUERY = graphql`
+  query BlogPostArchive {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           frontmatter {
             title
+            slug
           }
         }
       }
@@ -16,20 +17,20 @@ const ALL_POSTS_QUERY = graphql`
 `;
 
 const Archive = () => {
-  const data = useStaticQuery(ALL_POSTS_QUERY);
+  const data = useStaticQuery(POST_ARCHIVE_QUERY);
 
   const { allMarkdownRemark } = data;
-  console.log(allMarkdownRemark);
 
   return (
     <div>
       <h1>Post List</h1>
       <ul>
         {allMarkdownRemark.edges.map(edge => {
-          console.log(edge);
           return (
             <li key={edge.node.frontmatter.slug}>
-              {edge.node.frontmatter.title}
+              <Link to={`/posts${edge.node.frontmatter.slug}`}>
+                {edge.node.frontmatter.title}
+              </Link>
             </li>
           );
         })}
