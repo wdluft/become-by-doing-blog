@@ -8,6 +8,7 @@ const FooterWrapper = styled.footer`
 const footer = () => {
   return (
     <FooterWrapper>
+      <p>Will Luft</p>
       <p>
         <a
           href="https://twitter.com/iamwilldl"
