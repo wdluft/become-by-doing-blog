@@ -9,7 +9,7 @@ import './layout.css';
 import Archive from './archive';
 
 const LayoutWrapper = styled.div`
-  max-width: 705px;
+  max-width: 755px;
   padding: 50px;
   margin: 0 auto;
   background: var(--gray-color-9);

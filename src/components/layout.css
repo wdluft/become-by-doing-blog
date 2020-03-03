@@ -69,6 +69,10 @@ body {
   line-height: 1.5;
 }
 
+h1 {
+  font-size: var(--text-9);
+}
+
 li {
   list-style: none;
 }

@@ -2,6 +2,24 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from './seo';
 import Layout from './layout';
+import styled from 'styled-components';
+
+const PostWrapper = styled.article`
+  .post__title {
+    color: var(--primary-color-5);
+  }
+
+  .post__date {
+    color: var(--tertiary-color-3);
+    margin-bottom: 1rem;
+  }
+
+  .post__body {
+    p {
+      font-size: var(--text-4);
+    }
+  }
+`;
 
 const postLayout = ({ data }) => {
   const { markdownRemark } = data;
@@ -10,12 +28,16 @@ const postLayout = ({ data }) => {
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />
-      <h1>{markdownRemark.frontmatter.title}</h1>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: markdownRemark.html,
-        }}
-      />
+      <PostWrapper className="post">
+        <h1 className="post__title">{markdownRemark.frontmatter.title}</h1>
+        <p className="post__date">{markdownRemark.frontmatter.date}</p>
+        <div
+          className="post__body"
+          dangerouslySetInnerHTML={{
+            __html: markdownRemark.html,
+          }}
+        />
+      </PostWrapper>
     </Layout>
   );
 };
