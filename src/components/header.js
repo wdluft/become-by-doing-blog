@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 
   h1 {
     font-size: var(--text-9);
