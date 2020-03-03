@@ -20,7 +20,7 @@ const Listing_Query = graphql`
 `;
 
 const ListingWrapper = styled.article`
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 
   h2 {
     font-size: var(--text-7);
@@ -28,6 +28,7 @@ const ListingWrapper = styled.article`
 
   p {
     margin-bottom: 1rem;
+    font-size: var(--text-4);
   }
 
   .post-date {

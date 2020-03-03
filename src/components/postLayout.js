@@ -14,10 +14,11 @@ const PostWrapper = styled.article`
     margin-bottom: 1rem;
   }
 
+  p {
+    font-size: var(--text-4);
+  }
+
   .post__body {
-    p {
-      font-size: var(--text-4);
-    }
     margin-bottom: 1.25rem;
   }
 `;
@@ -56,7 +57,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
