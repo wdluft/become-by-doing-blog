@@ -47,9 +47,9 @@ const Listing = () => {
               <h2>{node.frontmatter.title}</h2>
             </Link>
             <p className="post-date">{node.frontmatter.date}</p>
-            <p className="post-excerpt">{node.excerpt}</p>
-            <p>
-              <Link to={`/posts/${node.frontmatter.slug}`}>Read More...</Link>
+            <p className="post-excerpt">
+              {node.excerpt}
+              <Link to={`/posts/${node.frontmatter.slug}`}>Read More</Link>
             </p>
           </ListingWrapper>
         );
