@@ -21,10 +21,9 @@ const PostWrapper = styled.article`
   }
 `;
 
-const postLayout = ({ data }) => {
+const postLayout = ({ data, location }) => {
   const { markdownRemark } = data;
-  console.log(data);
-  console.log(markdownRemark);
+  console.log(location);
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />
@@ -37,6 +36,13 @@ const postLayout = ({ data }) => {
             __html: markdownRemark.html,
           }}
         />
+        <a
+          href={`https://twitter.com/intent/tweet?text=${markdownRemark.frontmatter.title}&via=IAmWillDL&url=${location.href}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Share on Twitter
+        </a>
       </PostWrapper>
     </Layout>
   );
