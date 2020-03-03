@@ -10,7 +10,9 @@ import Archive from './archive';
 
 const LayoutWrapper = styled.div`
   max-width: 705px;
-  margin: 50px auto;
+  padding: 50px;
+  margin: 0 auto;
+  background: var(--gray-color-9);
 `;
 
 const Layout = ({ children }) => {
