@@ -18,6 +18,7 @@ const PostWrapper = styled.article`
     p {
       font-size: var(--text-4);
     }
+    margin-bottom: 1.25rem;
   }
 `;
 
@@ -37,6 +38,7 @@ const postLayout = ({ data, location }) => {
           }}
         />
         <a
+          className="post__share-link"
           href={`https://twitter.com/intent/tweet?text=${markdownRemark.frontmatter.title}&via=IAmWillDL&url=${location.href}`}
           target="_blank"
           rel="noopener noreferrer"
