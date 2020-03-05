@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  margin: 50px 0;
+  margin: 50px 0 0;
 `;
 
 const footer = () => {
