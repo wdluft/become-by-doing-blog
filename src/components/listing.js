@@ -31,8 +31,16 @@ const ListingWrapper = styled.article`
     font-size: var(--text-4);
   }
 
-  .post-date {
-    color: var(--tertiary-color-3);
+  .post__date {
+    color: var(--tertiary-color-2);
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 16px;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -47,9 +55,9 @@ const Listing = () => {
             <Link to={`/posts/${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
             </Link>
-            <p className="post-date">{node.frontmatter.date}</p>
-            <p className="post-excerpt">
-              {node.excerpt}
+            <p className="post__date">{node.frontmatter.date}</p>
+            <p className="post__excerpt">{node.excerpt}</p>
+            <p>
               <Link to={`/posts/${node.frontmatter.slug}`}>Read More</Link>
             </p>
           </ListingWrapper>
