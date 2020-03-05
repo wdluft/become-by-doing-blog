@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
   margin-bottom: 35px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color-2);
 
   h1 {
     font-size: var(--text-9);
@@ -18,9 +20,16 @@ const HeaderWrapper = styled.header`
     }
   }
 
-  img {
-    width: 42px;
-    display: inline-block;
+  p {
+    font-size: var(--text-4);
+  }
+
+  /* Smartphone, portrait */
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: var(--text-8);
+      margin-bottom: 1rem;
+    }
   }
 `;
 
