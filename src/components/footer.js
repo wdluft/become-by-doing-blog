@@ -2,7 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  margin: 50px 0 0;
+  margin: 40px 0 0;
+  padding-top: 10px;
+  border-top: 2px solid var(--primary-color-2);
+
+  /* Smartphone, portrait */
+  @media only screen and (max-width: 480px) {
+    margin: 15px 0 0;
+  }
 `;
 
 const footer = () => {
