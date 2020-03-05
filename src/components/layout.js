@@ -12,6 +12,12 @@ const LayoutWrapper = styled.div`
   padding: 50px;
   margin: 0 auto;
   background: var(--gray-color-9);
+
+  /* Smartphone, portrait */
+  @media only screen and (max-width: 480px) {
+    max-width: 480px;
+    padding: 25px 30px;
+  }
 `;
 
 const Layout = ({ children }) => {
