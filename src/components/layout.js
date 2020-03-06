@@ -13,16 +13,15 @@ const LayoutWrapper = styled.div`
   margin: 0 auto;
   background: var(--gray-color-9);
 
-  /* Smartphone, portrait */
-  /* @media only screen and (max-width: 480px) {
-    max-width: 480px;
-    padding: 25px 30px;
-  } */
-
   /* Tablet */
   @media only screen and (max-width: 768px) {
     max-width: 768px;
-    padding: 25px 30px;
+    padding: 25px 32px;
+  }
+
+  /* Smartphone, portrait */
+  @media only screen and (max-width: 480px) {
+    padding: 25px 18px;
   }
 `;
 

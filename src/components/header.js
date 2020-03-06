@@ -24,6 +24,15 @@ const HeaderWrapper = styled.header`
     font-size: var(--text-4);
   }
 
+  /* Tablet, portrait */
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 24px;
+
+    h1 {
+      font-size: var(--text-8);
+    }
+  }
+
   /* Smartphone, portrait */
   @media only screen and (max-width: 480px) {
     margin-bottom: 10px;
@@ -35,14 +44,6 @@ const HeaderWrapper = styled.header`
 
     p {
       font-size: var(--text-5);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    margin-bottom: 24px;
-
-    h1 {
-      font-size: var(--text-8);
     }
   }
 `;

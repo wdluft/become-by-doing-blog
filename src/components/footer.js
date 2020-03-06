@@ -6,14 +6,15 @@ const FooterWrapper = styled.footer`
   padding-top: 10px;
   border-top: 2px solid var(--primary-color-2);
 
+  /* Tablet, portrait */
+  @media only screen and (max-width: 768px) {
+    margin: 24px 0 0;
+  }
+
   /* Smartphone, portrait */
   @media only screen and (max-width: 480px) {
     margin: 15px 0 0;
     font-size: var(--text-5);
-  }
-
-  @media only screen and (max-width: 768px) {
-    margin: 24px 0 0;
   }
 `;
 
