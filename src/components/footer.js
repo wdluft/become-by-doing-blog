@@ -9,6 +9,7 @@ const FooterWrapper = styled.footer`
   /* Smartphone, portrait */
   @media only screen and (max-width: 480px) {
     margin: 15px 0 0;
+    font-size: var(--text-5);
   }
 `;
 

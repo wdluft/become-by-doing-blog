@@ -12,20 +12,37 @@ const PostWrapper = styled.article`
   .post__date {
     color: var(--tertiary-color-3);
     margin-bottom: 1rem;
-  }
-
-  p {
     font-size: var(--text-4);
   }
 
   .post__body {
+    font-size: var(--text-4);
     margin-bottom: 1.25rem;
+  }
+
+  .post__share-link {
+    font-size: var(--text-4);
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 10px;
+
+    .post__title {
+      font-size: var(--text-8);
+    }
+
+    .post__body {
+      font-size: var(--text-5);
+    }
+
+    .post__share-link {
+      font-size: var(--text-5);
+    }
   }
 `;
 
 const postLayout = ({ data, location }) => {
   const { markdownRemark } = data;
-  console.log(location);
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />

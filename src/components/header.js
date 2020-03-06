@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--primary-color-2);
 
@@ -26,10 +26,16 @@ const HeaderWrapper = styled.header`
 
   /* Smartphone, portrait */
   @media only screen and (max-width: 480px) {
+    margin-bottom: 10px;
+
     h1 {
       font-size: var(--text-8);
       margin-bottom: 1rem;
     }
+  }
+
+  p {
+    font-size: var(--text-5);
   }
 `;
 
