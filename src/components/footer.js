@@ -11,6 +11,10 @@ const FooterWrapper = styled.footer`
     margin: 15px 0 0;
     font-size: var(--text-5);
   }
+
+  @media only screen and (max-width: 768px) {
+    margin: 24px 0 0;
+  }
 `;
 
 const footer = () => {

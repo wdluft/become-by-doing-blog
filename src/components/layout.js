@@ -8,14 +8,20 @@ import Footer from './footer';
 import './layout.css';
 
 const LayoutWrapper = styled.div`
-  max-width: 755px;
+  max-width: 768px;
   padding: 50px;
   margin: 0 auto;
   background: var(--gray-color-9);
 
   /* Smartphone, portrait */
-  @media only screen and (max-width: 480px) {
+  /* @media only screen and (max-width: 480px) {
     max-width: 480px;
+    padding: 25px 30px;
+  } */
+
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    max-width: 768px;
     padding: 25px 30px;
   }
 `;

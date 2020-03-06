@@ -32,10 +32,18 @@ const HeaderWrapper = styled.header`
       font-size: var(--text-8);
       margin-bottom: 1rem;
     }
+
+    p {
+      font-size: var(--text-5);
+    }
   }
 
-  p {
-    font-size: var(--text-5);
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 24px;
+
+    h1 {
+      font-size: var(--text-8);
+    }
   }
 `;
 
