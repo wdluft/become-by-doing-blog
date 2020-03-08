@@ -39,7 +39,7 @@ const HeaderWrapper = styled.header`
 
     h1 {
       font-size: var(--text-8);
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
