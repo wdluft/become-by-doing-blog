@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import SEO from './seo';
 import Layout from './layout';
-import styled from 'styled-components';
 
 const PostWrapper = styled.article`
   .post__title {
@@ -42,6 +43,8 @@ const PostWrapper = styled.article`
 `;
 
 const postLayout = ({ data, location }) => {
+  // data is a object
+  // location is an object
   const { markdownRemark } = data;
   return (
     <Layout>
@@ -51,13 +54,16 @@ const postLayout = ({ data, location }) => {
         <p className="post__date">{markdownRemark.frontmatter.date}</p>
         <div
           className="post__body"
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: markdownRemark.html,
           }}
         />
         <a
           className="post__share-link"
-          href={`https://twitter.com/intent/tweet?text=${markdownRemark.frontmatter.title}&via=IAmWillDL&url=${location.href}`}
+          href={`https://twitter.com/intent/tweet?text=${
+            markdownRemark.frontmatter.title
+          }&via=IAmWillDL&url=${location.href}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -66,6 +72,11 @@ const postLayout = ({ data, location }) => {
       </PostWrapper>
     </Layout>
   );
+};
+
+postLayout.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export const query = graphql`

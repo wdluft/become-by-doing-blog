@@ -49,20 +49,18 @@ const Listing = () => {
   const { allMarkdownRemark } = data;
   return (
     <div>
-      {allMarkdownRemark.edges.map(({ node }) => {
-        return (
-          <ListingWrapper key={node.frontmatter.slug}>
-            <Link to={`/posts/${node.frontmatter.slug}`}>
-              <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <p className="post__date">{node.frontmatter.date}</p>
-            <p className="post__excerpt">{node.excerpt}</p>
-            <p>
-              <Link to={`/posts/${node.frontmatter.slug}`}>Read More</Link>
-            </p>
-          </ListingWrapper>
-        );
-      })}
+      {allMarkdownRemark.edges.map(({ node }) => (
+        <ListingWrapper key={node.frontmatter.slug}>
+          <Link to={`/posts/${node.frontmatter.slug}`}>
+            <h2>{node.frontmatter.title}</h2>
+          </Link>
+          <p className="post__date">{node.frontmatter.date}</p>
+          <p className="post__excerpt">{node.excerpt}</p>
+          <p>
+            <Link to={`/posts/${node.frontmatter.slug}`}>Read More</Link>
+          </p>
+        </ListingWrapper>
+      ))}
     </div>
   );
 };
