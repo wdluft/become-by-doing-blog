@@ -63,6 +63,8 @@ const Header = ({ siteTitle }) => (
         >
           Will Luft
         </a>
+        {'. '} Can be anything from web development, sports, philosophy, or
+        whatever else grabs my attention.
       </p>
     </div>
   </HeaderWrapper>
