@@ -12,6 +12,7 @@ const Listing_Query = graphql`
             title
             slug
             date(formatString: "MMMM DD, YYYY")
+            blurb
           }
         }
       }
@@ -27,7 +28,6 @@ const ListingWrapper = styled.article`
   }
 
   p {
-    margin-bottom: 1rem;
     font-size: var(--text-4);
   }
 
@@ -55,7 +55,7 @@ const Listing = () => {
             <h2>{node.frontmatter.title}</h2>
           </Link>
           <p className="post__date">{node.frontmatter.date}</p>
-          <p className="post__excerpt">{node.excerpt}</p>
+          <p className="post__excerpt">{node.frontmatter.blurb}</p>
           <p>
             <Link to={`/posts/${node.frontmatter.slug}`}>Read More</Link>
           </p>
