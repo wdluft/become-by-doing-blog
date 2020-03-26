@@ -67,7 +67,7 @@ const postLayout = ({ data, location }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Share on Twitter
+          Share post on Twitter
         </a>
       </PostWrapper>
     </Layout>
