@@ -63,9 +63,9 @@ const postLayout = ({ data, location }) => {
           className="post__share-link"
           href={`https://twitter.com/intent/tweet?text=${
             markdownRemark.frontmatter.title
-          }&via=IAmWillDL&url=${location.href}`}
-          // target="_blank"
-          // rel="noopener noreferrer"
+          }&via=IAmWillDL&url=${encodeURIComponent(location.href)}`}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Share post on Twitter
         </a>
