@@ -21,6 +21,10 @@ const PostWrapper = styled.article`
     margin-bottom: 1.25rem;
   }
 
+  li {
+    list-style: disc;
+  }
+
   .post__share-link {
     font-size: var(--text-4);
   }
