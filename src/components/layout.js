@@ -11,7 +11,7 @@ const LayoutWrapper = styled.div`
   max-width: 768px;
   padding: 50px;
   margin: 0 auto;
-  background: var(--gray-color-9);
+  background: var(--black);
 
   /* Tablet */
   @media only screen and (max-width: 768px) {

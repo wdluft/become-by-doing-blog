@@ -1,53 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --primary-color-1: #e4ffff;
-  --primary-color-2: #b3ffff;
-  --primary-color-3: #80ffff;
-  --primary-color-4: #3dffff;
-  --primary-color-5: #00ffff;
-  --primary-color-6: #00cccc;
-  --primary-color-7: #009999;
-  --primary-color-8: #006666;
-  --primary-color-9: #004242;
-  --secondary-color-1: #ffe5f5;
-  --secondary-color-2: #ffb3e2;
-  --secondary-color-3: #ff80ce;
-  --secondary-color-4: #ff42b7;
-  --secondary-color-5: #ff009d;
-  --secondary-color-6: #c7007b;
-  --secondary-color-7: #99005e;
-  --secondary-color-8: #66003f;
-  --secondary-color-9: #4d002f;
-  --tertiary-color-1: #dbffdf;
-  --tertiary-color-2: #b3ffba;
-  --tertiary-color-3: #75ff83;
-  --tertiary-color-4: #42ff55;
-  --tertiary-color-5: #00ff19;
-  --tertiary-color-6: #00e016;
-  --tertiary-color-7: #00b212;
-  --tertiary-color-8: #00700b;
-  --tertiary-color-9: #004707;
-  --gray-color-1: #f7f7f7;
-  --gray-color-2: #e1e1e1;
-  --gray-color-3: #cfcfcf;
-  --gray-color-4: #b1b1b1;
-  --gray-color-5: #9e9e9e;
-  --gray-color-6: #7e7e7e;
-  --gray-color-7: #626262;
-  --gray-color-8: #515151;
-  --gray-color-9: #222222;
-  --text-1: 0.75rem;
-  --text-2: 0.875rem;
-  --text-3: 1rem;
-  --text-4: 1.125rem;
-  --text-5: 1.25rem;
-  --text-6: 1.5rem;
-  --text-7: 1.875rem;
-  --text-8: 2.25rem;
-  --text-9: 3rem;
-  --text-10: 3.75rem;
-  --text-11: 4.375rem;
+  /* Colors */
+  --primary: #ff8906;
+  --primaryLight: #ffad52;
+  --primaryDark: #b86100;
+  --secondary: #f25f4c;
+  --tertiary: #e53170;
+  --black: #0f0e17;
+  --white: #fffffe;
+  --gray: #a7a9be;
+
+  --bgColor: var(--black);
+  --bodyColor: var(--gray);
+  --headingColor: var(--white);
+
+  --linkColor: var(--primary);
+  --linkHoverColor: var(--primaryLight);
+  --linkActiveColor: var(--primaryDark);
+
+  /* Typography */
+  --headingFont: 'Muli', sans-serif;
+  --bodyFont: 'Muli', sans-serif;
+
+  --bodyText: 1rem;
+  --smallText: 0.8rem;
+  --headingOne: 3.052rem;
+  --headingTwo: 2.441rem;
+  --headingThree: 1.953rem;
+  --headingFour: 1.563rem;
+  --headingFive: 1.25rem;
+  --headingSix: 1rem;
+
+  --lineHeight: 1.65;
 }
 
 * {
@@ -57,21 +42,45 @@
 }
 
 html {
-  font-family: 'Carmorant Garamond', Cambria, Cochin, Georgia, Times,
-    'Times New Roman', serif;
+  font-size: 18px;
 }
 
 body {
   /* Background from https://www.heropatterns.com/ */
-  background-color: #222222;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23009999' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--bgColor);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='48' viewBox='0 0 60 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='fancy-rectangles' fill='%23ff8906' fill-opacity='1'%3E%3Cpath d='M6 12h6v12H6V12zm12 0h6v12h-6V12zm6-12h6v12h-6V0zM12 0h6v12h-6V0zm0 24h6v12h-6V24zM0 0h6v12H0V0zm6 36h6v12H6V36zm12 0h6v12h-6V36zm12-12h6v12h-6V24zM42 0h6v12h-6V0zm-6 12h6v12h-6V12zm12 0h6v12h-6V12zM36 36h6v12h-6V36zm12 0h6v12h-6V36zm-6-12h6v12h-6V24zm12 0h6v12h-6V24z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
-  color: var(--gray-color-1);
-  line-height: 1.5;
+  color: var(--bodyColor);
+  line-height: var(--lineHeight);
+  font-family: var(--bodyFont);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headingColor);
 }
 
 h1 {
-  font-size: var(--text-9);
+  font-size: var(--headingOne);
+}
+h2 {
+  font-size: var(--headingTwo);
+}
+h3 {
+  font-size: var(--headingThree);
+}
+h4 {
+  font-size: var(--headingFour);
+}
+h5 {
+  font-size: var(--headingFive);
+}
+h6 {
+  font-size: var(--headingSix);
 }
 
 li {
@@ -79,15 +88,15 @@ li {
 }
 
 a {
-  color: var(--primary-color-5);
+  color: var(--linkColor);
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--linkHoverColor);
   text-decoration: underline;
 }
 
-.text-primary {
-  color: var(--primary-color-5);
-  font-size: 1.5rem;
+a:active {
+  color: var(--linkActiveColor);
 }
