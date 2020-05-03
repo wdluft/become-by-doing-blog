@@ -21,7 +21,6 @@ The `box-shadow` property can take up to six different values:
 - Color - the color of the shadow
 
 </br>
-</br>
 What was really confusion for me was the difference between the blur-radius and spread-radius. For whatever reason, I struggled to understand how they were different and how they changed what the shadow looked like. It was only after watching a YouTube video that explained how you should replace "spread-radius" in your mind with "size" that I started to get a better understanding of it.
 </br>
 </br>
