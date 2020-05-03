@@ -9,6 +9,10 @@ export const ListingWrapper = styled.article`
     &:hover {
       color: var(--primaryLight);
     }
+
+    &:active {
+      color: var(--primaryDark);
+    }
   }
 
   .post__date {

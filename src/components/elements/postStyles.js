@@ -15,18 +15,21 @@ export const PostWrapper = styled.article`
 
   .post__shareLink {
     &:hover {
-      .post__shareLinkSpace {
-        text-decoration: none;
-      }
       .post__shareLink--svg {
         path {
-            stroke: var(--primaryLight);
-          }
+          stroke: var(--primaryLight);
+        }
+      }
+    }
+
+    &:active {
+      .post__shareLink--svg {
+        path {
+          stroke: var(--primaryDark);
         }
       }
     }
   }
-
 
   li {
     list-style: disc;
