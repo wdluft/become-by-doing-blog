@@ -3,6 +3,14 @@ import styled from 'styled-components';
 export const ListingWrapper = styled.article`
   margin-bottom: 2rem;
 
+  .post__heading {
+    color: var(--primary);
+
+    &:hover {
+      color: var(--primaryLight);
+    }
+  }
+
   .post__date {
     color: var(--secondary);
     font-size: var(--smallText);
