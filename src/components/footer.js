@@ -3,9 +3,10 @@ import { FooterWrapper } from './elements/footerStyles';
 
 const footer = () => (
   <FooterWrapper>
-    <p>Will Luft</p>
+    <h6 className="footer__heading">Will Luft</h6>
     <p>
       <a
+        className="footer__link"
         href="https://twitter.com/iamwilldl"
         target="_blank"
         rel="noopener noreferrer"
@@ -14,6 +15,7 @@ const footer = () => (
       </a>{' '}
       |{' '}
       <a
+        className="footer__link"
         href="https://github.com/wdluft"
         target="_blank"
         rel="noopener noreferrer"
@@ -22,6 +24,7 @@ const footer = () => (
       </a>{' '}
       |{' '}
       <a
+        className="footer__link"
         href="https://www.willluft.com/"
         target="_blank"
         rel="noopener noreferrer"

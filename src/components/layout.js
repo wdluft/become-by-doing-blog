@@ -9,7 +9,7 @@ import './layout.css';
 
 const LayoutWrapper = styled.div`
   max-width: 768px;
-  padding: 50px;
+  padding: 2rem;
   margin: 0 auto;
   background: var(--black);
 
