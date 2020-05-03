@@ -19,15 +19,16 @@ The `box-shadow` property can take up to six different values:
 - Blur-Radius (optional) - the lower the blur-radius, the sharper the shadow. A blur-radius of 0 will make the shadow look like a border. Can only be positive values.
 - Spread-radius (optional) - sets how large the shadow is. Keeping a spread-radius of 0 sets it to the same size as the blur-radius. Can be positive or negative.
 - Color - the color of the shadow
-  </br>
-  </br>
-  What was really confusion for me was the difference between the blur-radius and spread-radius. For whatever reason, I struggled to understand how they were different and how they changed what the shadow looked like. It was only after watching a YouTube video that explained how you should replace "spread-radius" in your mind with "size" that I started to get a better understanding of it.
-  </br>
-  </br>
-  The next set of lessons was from reading the book <a href='https://refactoringui.com/' rel="noopener noreferrer" target='_blank'>Refactoring UI</a>, written by Adam Wathan and Steve Schoger. There's an entire chapter on learning about shadows that really helped me level up my designs. It showed how multiple shadows and be added to an element to make it look either raised off the page or inset. To make something appear raised off the page, you add a lighter shadow on top and a darker shadow underneath as if the light source is coming from above. And to make something appear inset, you have a darker, inset shadow on top and a lighter inset shadow on the bottom.
-  </br>
-  </br>
-  Another small thing to create better shadows in to include multiple. A smaller, darker one, and then a larger, lighter one. This more accurately mimics real life because the closer to an object the shadow is, the darker it gets.
-  </br>
-  </br>
-  All these little tricks really helped elevate the design on my website. I'm really happy with how it came out and I'm looking forward to implementing more shadows in my design going forward.
+
+</br>
+</br>
+What was really confusion for me was the difference between the blur-radius and spread-radius. For whatever reason, I struggled to understand how they were different and how they changed what the shadow looked like. It was only after watching a YouTube video that explained how you should replace "spread-radius" in your mind with "size" that I started to get a better understanding of it.
+</br>
+</br>
+The next set of lessons was from reading the book <a href='https://refactoringui.com/' rel="noopener noreferrer" target='_blank'>Refactoring UI</a>, written by Adam Wathan and Steve Schoger. There's an entire chapter on learning about shadows that really helped me level up my designs. It showed how multiple shadows and be added to an element to make it look either raised off the page or inset. To make something appear raised off the page, you add a lighter shadow on top and a darker shadow underneath as if the light source is coming from above. And to make something appear inset, you have a darker, inset shadow on top and a lighter inset shadow on the bottom.
+</br>
+</br>
+Another small thing to create better shadows in to include multiple. A smaller, darker one, and then a larger, lighter one. This more accurately mimics real life because the closer to an object the shadow is, the darker it gets.
+</br>
+</br>
+All these little tricks really helped elevate the design on my website. I'm really happy with how it came out and I'm looking forward to implementing more shadows in my design going forward.
