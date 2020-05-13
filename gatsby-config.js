@@ -3,6 +3,7 @@ module.exports = {
     title: `Become By Doing`,
     description: `A collection of my thoughts.`,
     author: `@IAmWillDL`,
+    siteUrl: `https://becomebydoing.me`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

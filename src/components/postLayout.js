@@ -7,7 +7,12 @@ import Layout from './layout';
 import { PostWrapper } from './elements/postStyles';
 
 const postLayout = ({ data, location }) => {
-  const { markdownRemark } = data;
+  const { markdownRemark, site } = data;
+  const pageURL = `${site.siteMetadata.siteUrl}${
+    markdownRemark.frontmatter.slug
+  }`;
+  console.log(pageURL);
+  console.log(site.siteMetadata.siteUrl);
   // console.log(
   //   `https://twitter.com/intent/tweet?text=${encodeURIComponent(
   //     markdownRemark.frontmatter.title
@@ -30,7 +35,7 @@ const postLayout = ({ data, location }) => {
           className="post__shareLink"
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
             markdownRemark.frontmatter.title
-          )}&via=IAmWillDL&url=${encodeURI(location.href)}`}
+          )}&via=IAmWillDL&url=${encodeURI(pageURL)}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -69,6 +74,12 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        slug
+      }
+    }
+    site(siteMetadata: {}) {
+      siteMetadata {
+        siteUrl
       }
     }
   }
