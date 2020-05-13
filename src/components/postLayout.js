@@ -8,6 +8,11 @@ import { PostWrapper } from './elements/postStyles';
 
 const postLayout = ({ data, location }) => {
   const { markdownRemark } = data;
+  console.log(
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      markdownRemark.frontmatter.title
+    )}&via=IAmWillDL&url=${encodeURIComponent(location.href)}`
+  );
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />
@@ -23,9 +28,9 @@ const postLayout = ({ data, location }) => {
         />
         <a
           className="post__shareLink"
-          href={`https://twitter.com/intent/tweet?text=${
+          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
             markdownRemark.frontmatter.title
-          }&via=IAmWillDL&url=${encodeURIComponent(location.href)}`}
+          )}&via=IAmWillDL&url=${encodeURIComponent(location.href)}`}
           target="_blank"
           rel="noopener noreferrer"
         >
