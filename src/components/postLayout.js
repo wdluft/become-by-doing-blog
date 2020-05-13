@@ -11,13 +11,6 @@ const postLayout = ({ data, location }) => {
   const pageURL = `${site.siteMetadata.siteUrl}${
     markdownRemark.frontmatter.slug
   }`;
-  console.log(pageURL);
-  console.log(site.siteMetadata.siteUrl);
-  // console.log(
-  //   `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-  //     markdownRemark.frontmatter.title
-  //   )}&via=IAmWillDL&url=${encodeURI(location.href)}`
-  // );
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />
