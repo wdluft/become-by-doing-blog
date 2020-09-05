@@ -2,17 +2,24 @@
 
 :root {
   /* Colors */
-  --primary: #ff8906;
-  --primaryLight: #ffad52;
-  --primaryDark: #b86100;
-  --secondary: #f25f4c;
-  --tertiary: #e53170;
-  --black: #0f0e17;
-  --white: #fffffe;
-  --gray: #a7a9be;
+  --teal: #38bec9;
+  --lightTeal: #87eaf2;
+  --darkTeal: #0e7c86;
+  --green: #3ce050;
+  --blue: #496ed2;
+  --white: #faf9f7;
+  --grey: #a39e93;
+  --lightGrey: #e8e6e1;
+  --black: #230c0f;
+
+  --primary: var(--teal);
+  --primaryLight: var(--lightTeal);
+  --primaryDark: var(--darkTeal);
+  --secondary: var(--green);
+  --tertiary: var(--blue);
 
   --bgColor: var(--black);
-  --bodyColor: var(--gray);
+  --bodyColor: var(--lightGrey);
   --headingColor: var(--white);
 
   --linkColor: var(--primary);
@@ -33,6 +40,8 @@
   --headingSix: 1rem;
 
   --lineHeight: 1.65;
+
+  --transition: all 200ms ease-in-out;
 }
 
 * {
@@ -48,7 +57,7 @@ html {
 body {
   /* Background from https://www.heropatterns.com/ */
   background-color: var(--bgColor);
-  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23ff8906' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2338bec9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-attachment: fixed;
   color: var(--bodyColor);
   line-height: var(--lineHeight);
@@ -90,6 +99,7 @@ li {
 a {
   color: var(--linkColor);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 a:hover {

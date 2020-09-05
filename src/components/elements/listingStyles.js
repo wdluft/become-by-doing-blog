@@ -5,6 +5,7 @@ export const ListingWrapper = styled.article`
 
   .post__heading {
     color: var(--primary);
+    transition: var(--transition);
 
     &:hover {
       color: var(--primaryLight);
