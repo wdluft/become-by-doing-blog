@@ -8,9 +8,8 @@ import { PostWrapper } from './elements/postStyles';
 
 const postLayout = ({ data, location }) => {
   const { markdownRemark, site } = data;
-  const pageURL = `${site.siteMetadata.siteUrl}${
-    markdownRemark.frontmatter.slug
-  }`;
+  const pageURL = `${site.siteMetadata.siteUrl}/posts${markdownRemark.frontmatter.slug}`;
+  console.log(pageURL);
   return (
     <Layout>
       <SEO title={markdownRemark.frontmatter.title} />
