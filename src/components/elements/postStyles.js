@@ -7,6 +7,7 @@ export const PostWrapper = styled.article`
     color: var(--secondary);
     margin-bottom: 1rem;
     font-size: var(--smallText);
+    font-weight: bold;
   }
 
   .post__body {
@@ -14,10 +15,18 @@ export const PostWrapper = styled.article`
   }
 
   .post__shareLink {
+    .post__shareLink--svg {
+      path {
+        stroke: var(--linkColor);
+      }
+    }
+  }
+
+  .post__shareLink {
     &:hover {
       .post__shareLink--svg {
         path {
-          stroke: var(--primaryLight);
+          stroke: var(--linkHoverColor);
         }
       }
     }
@@ -25,7 +34,7 @@ export const PostWrapper = styled.article`
     &:active {
       .post__shareLink--svg {
         path {
-          stroke: var(--primaryDark);
+          stroke: var(--linkActiveColor);
         }
       }
     }

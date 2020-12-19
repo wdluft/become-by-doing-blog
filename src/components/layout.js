@@ -11,7 +11,7 @@ const LayoutWrapper = styled.div`
   max-width: 768px;
   padding: 2rem;
   margin: 0 auto;
-  background: var(--superDarkGrey);
+  background: var(--bgColor);
 
   /* Tablet */
   @media only screen and (max-width: 768px) {
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <LayoutWrapper>
+    <LayoutWrapper className="light-mode">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>

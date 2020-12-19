@@ -8,7 +8,7 @@ export const ListingWrapper = styled.article`
     transition: var(--transition);
 
     &:hover {
-      color: var(--primaryLight);
+      color: var(--primaryDark);
     }
 
     &:active {
@@ -19,6 +19,7 @@ export const ListingWrapper = styled.article`
   .post__date {
     color: var(--secondary);
     font-size: var(--smallText);
+    font-weight: bold;
   }
 
   @media only screen and (max-width: 640px) {
