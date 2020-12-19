@@ -29,8 +29,8 @@ module.exports = {
         name: `will-colors`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#00ffff`,
-        theme_color: `#00ffff`,
+        background_color: `hsl(209, 15%, 28%)`,
+        theme_color: `hsl(180, 94%, 58%)`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },

@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "fontsource-rubik": "^3.1.6",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
@@ -15,7 +16,7 @@
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-remark-prismjs": "^3.3.32",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^2.8.38",
     "gatsby-transformer-sharp": "^2.3.13",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
