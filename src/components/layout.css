@@ -61,6 +61,40 @@ html {
 }
 
 body {
+  /* Colors */
+  --green: #3ce050;
+  --blue: #496ed2;
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 100%, 100%);
+  --teal: hsl(180, 94%, 58%);
+  --darkTeal: hsl(182, 92%, 43%);
+  --superDarkTeal: hsl(185, 85%, 28%);
+  --lightTeal: hsl(180, 98%, 76%);
+  --superLightTeal: hsl(180, 100%, 88%);
+  --yellow: hsl(48, 100%, 52%);
+  --superLightYellow: hsl(48, 100%, 70%);
+  --superDarkYellow: hsl(48, 100%, 31%);
+  --superDarkGrey: hsl(209, 15%, 28%);
+  --darkGrey: hsl(207, 12%, 43%);
+  --grey: hsl(208, 12%, 58%);
+  --lightGrey: hsl(210, 16%, 76%);
+  --superLightGrey: hsl(208, 21%, 88%);
+
+  --primary: var(--teal);
+  --primaryLight: var(--lightTeal);
+  --primaryDark: var(--darkTeal);
+  --superDarkPrimary: var(--superDarkTeal);
+  --superLightPrimary: var(--superLightTeal);
+  --secondary: var(--superLightYellow);
+
+  --bgColor: var(--superDarkGrey);
+  --bodyTextColor: var(--white);
+  --headingColor: var(--white);
+
+  --linkColor: var(--primary);
+  --linkHoverColor: var(--primaryLight);
+  --linkActiveColor: var(--primaryDark);
+
   /* Background from https://www.heropatterns.com/ */
   background-color: var(--bgColor);
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2338bec9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -68,6 +102,18 @@ body {
   color: var(--bodyTextColor);
   line-height: var(--lineHeight);
   font-family: var(--bodyFont);
+}
+
+.light-mode {
+  --bgColor: var(--white);
+  --bodyTextColor: var(--black);
+  --headingColor: var(--primary);
+
+  --primary: var(--superDarkTeal);
+  --secondary: var(--superDarkYellow);
+
+  --linkColor: var(--superDarkPrimary);
+  --linkHoverColor: var(--primaryDark);
 }
 
 h1,
@@ -123,14 +169,14 @@ body::-webkit-scrollbar {
 }
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--teal) var(--superDarkGrey);
+  scrollbar-color: var(--primary) var(--bgColor);
 }
 body::-webkit-scrollbar-track {
-  background: var(--superDarkGrey);
+  background: var(--bgColor);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--teal);
-  background-image: var(--teal);
+  background-color: var(--primary);
+  background-image: var(--primary);
   border-radius: 6px;
-  border: 3px solid var(--superDarkGrey);
+  border: 3px solid var(--bgColor);
 }
